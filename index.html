@@ -1,170 +1,211 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Link Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Link FontAweson Para Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Link Css -->
-   <link rel="stylesheet" href="src/css/styles.css">
-  <title>Search Bar</title>
-</head>
-<body>
-  <div id="container">
-    <div class="input-group">
-      <div class="input-icon">
-        <i class="fa-solid fa-magnifying-glass"></i>
+    <!-- Link FontAweson Para Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <title>Search Bar</title>
+  </head>
+  <body>
+    <section>
+      <div id="container">
+        <div class="input-group">
+          <div class="input-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <input
+            type="text"
+            id="seacrh"
+            class="input-field"
+            placeholder="Pesquisar"
+          />
+        </div>
+
+        <ul class="itens">
+          <!-- Item 1 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-01.jpg"
+                alt="Capa do Filme Homem de Ferro 1"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">Homem de Ferro</h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2008)
+              </p>
+              <p class="item-description">
+                Tony Stark é um industrial bilionário e inventor brilhante que
+                realiza testes bélicos no exterior, mas é sequestrado por
+                terroristas que o forçam a construir uma arma devastadora. Em
+                vez disso, ele constrói uma armadura blindada e enfrenta seus
+                sequestradores. Quando volta aos Estados Unidos, Stark aprimora
+                a armadura e a utiliza para combater o crime.
+              </p>
+            </div>
+          </li>
+          <!-- Item 2 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-02.jpg"
+                alt="Capa do Filme O Incrível Hulk"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">O Incrível Hulk</h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2008)
+              </p>
+              <p class="item-description">
+                TO cientista Bruce Banner se esconde no Brasil enquanto busca
+                desesperadamente a cura da mutação que o transforma em um
+                monstro incontrolável. Só assim ele poderá novamente levar uma
+                vida normal e ficar ao lado da mulher que ama. Porém, durante
+                este processo, ele precisa lutar contra o Abominável, um novo
+                inimigo que quer capturá-lo.
+              </p>
+            </div>
+          </li>
+          <!-- Item 3 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-03.jpg"
+                alt="Capa do Filme Homem de Ferro 2"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">Homem de Ferro 2</h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2010)
+              </p>
+              <p class="item-description">
+                Tony Stark declarou ser o Homem de Ferro e instalou a paz
+                mundial... ou assim pensa ele. Mas depressa percebe que, não só
+                existe um louco que o quer matar com a sua própria tecnologia
+                como, a acrescentar a isso, ele está a morrer.
+              </p>
+            </div>
+          </li>
+          <!-- Item 4 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-04.jpg"
+                alt="Capa do Filme Homem de Ferro 3"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">Homem de Ferro 3</h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2013)
+              </p>
+              <p class="item-description">
+                Depois de um inimigo reduzir o mundo de Tony Stark a destroços,
+                o Homem de Ferro precisa aprender a confiar em seus instintos
+                para proteger aqueles que ama, especialmente sua namorada, e
+                lutar contra seu maior medo: o fracasso.
+              </p>
+            </div>
+          </li>
+          <!-- Item 5 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-05.jpg"
+                alt="Capa do Filme Capitão América 2 - O Soldado Invernal"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">Capitão América 2 - O Soldado Invernal</h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2014)
+              </p>
+              <p class="item-description">
+                Na Washington D.C. da atualidade, Steve Rogers, ou Capitão
+                América, une forças com a Viúva Negra e com o novo aliado,
+                Falcão, para combater um inimigo poderoso e sinistro.
+              </p>
+            </div>
+          </li>
+          <!-- Item 6 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-06.jpg"
+                alt="Capa do Filme Doutor Estranho no Multiverso da Loucura"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">
+                Doutor Estranho no Multiverso da Loucura
+              </h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2022)
+              </p>
+              <p class="item-description">
+                O aguardado filme trata da jornada do Doutor Estranho rumo ao
+                desconhecido. Além de receber ajuda de novos aliados místicos e
+                outros já conhecidos do público, o personagem atravessa as
+                realidades alternativas incompreensíveis e perigosas do
+                Multiverso para enfrentar um novo e misterioso adversário.
+              </p>
+            </div>
+          </li>
+          <!-- Item 7 -->
+          <li class="item">
+            <div class="item-img">
+              <img
+                src="src/img/item-capa-07.jpg"
+                alt="Capa do Filme Doutor Estranho"
+              />
+            </div>
+            <div class="item-content">
+              <h2 class="item-title">Doutor Estranho</h2>
+              <p class="item-subtitle">
+                <i class="fa-solid fa-film"></i>
+                Filme (2010)
+              </p>
+              <p class="item-description">
+                Após sua carreira ser destruída, um brilhante, porém arrogante,
+                cirurgião ganha uma nova chance em sua vida quando um feiticeiro
+                o treina para se tornar o Mago Supremo.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
+    </section>
 
-      <input 
-        type="text" 
-        id="seacrh" 
-        class="input-field" 
-        placeholder="Pesquisar"
-      >
-    </div>
-
-    <ul class="itens">
-      <!-- Item 1 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-01.jpg" alt="Capa do Filme Homem de Ferro 1">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            Homem de Ferro
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2008)
-          </p>
-          <p class="item-description">
-            Tony Stark é um industrial bilionário e inventor brilhante que realiza testes bélicos no exterior, mas é sequestrado por terroristas que o forçam a construir uma arma devastadora. Em vez disso, ele constrói uma armadura blindada e enfrenta seus sequestradores. Quando volta aos Estados Unidos, Stark aprimora a armadura e a utiliza para combater o crime.
-          </p>
-        </div>
-      </li>
-      <!-- Item 2 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-02.jpg" alt="Capa do Filme O Incrível Hulk">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            O Incrível Hulk
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2008)
-          </p>
-          <p class="item-description">
-            TO cientista Bruce Banner se esconde no Brasil enquanto busca desesperadamente a cura da mutação que o transforma em um monstro incontrolável. Só assim ele poderá novamente levar uma vida normal e ficar ao lado da mulher que ama. Porém, durante este processo, ele precisa lutar contra o Abominável, um novo inimigo que quer capturá-lo.
-          </p>
-        </div>
-      </li>
-      <!-- Item 3 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-03.jpg" alt="Capa do Filme Homem de Ferro 2">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            Homem de Ferro 2
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2010)
-          </p>
-          <p class="item-description">
-            Tony Stark declarou ser o Homem de Ferro e instalou a paz mundial... ou assim pensa ele. Mas depressa percebe que, não só existe um louco que o quer matar com a sua própria tecnologia como, a acrescentar a isso, ele está a morrer.
-          </p>
-        </div>
-      </li>
-      <!-- Item 4 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-04.jpg" alt="Capa do Filme Homem de Ferro 3">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            Homem de Ferro 3
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2013)
-          </p>
-          <p class="item-description">
-            Depois de um inimigo reduzir o mundo de Tony Stark a destroços, o Homem de Ferro precisa aprender a confiar em seus instintos para proteger aqueles que ama, especialmente sua namorada, e lutar contra seu maior medo: o fracasso.
-          </p>
-        </div>
-      </li>
-      <!-- Item 5 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-05.jpg" alt="Capa do Filme Capitão América 2 - O Soldado Invernal">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            Capitão América 2 - O Soldado Invernal
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2014)
-          </p>
-          <p class="item-description">
-            Na Washington D.C. da atualidade, Steve Rogers, ou Capitão América, une forças com a Viúva Negra e com o novo aliado, Falcão, para combater um inimigo poderoso e sinistro.
-          </p>
-        </div>
-      </li>
-      <!-- Item 6 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-06.jpg" alt="Capa do Filme Doutor Estranho no Multiverso da Loucura">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            Doutor Estranho no Multiverso da Loucura
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2022)
-          </p>
-          <p class="item-description">
-            O aguardado filme trata da jornada do Doutor Estranho rumo ao desconhecido. Além de receber ajuda de novos aliados místicos e outros já conhecidos do público, o personagem atravessa as realidades alternativas incompreensíveis e perigosas do Multiverso para enfrentar um novo e misterioso adversário.
-          </p>
-        </div>
-      </li>
-      <!-- Item 7 -->
-      <li class="item">
-        <div class="item-img">
-          <img src="src/img/item-capa-07.jpg" alt="Capa do Filme Doutor Estranho">
-        </div>
-        <div class="item-content">
-          <h2 class="item-title">
-            Doutor Estranho
-          </h2>
-          <p class="item-subtitle">
-            <i class="fa-solid fa-film"></i>
-            Filme (2010)
-          </p>
-          <p class="item-description">
-            Após sua carreira ser destruída, um brilhante, porém arrogante, cirurgião ganha uma nova chance em sua vida quando um feiticeiro o treina para se tornar o Mago Supremo.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-  
-
-
-
-  <!-- Link JavaScript -->
-   <script src="src/js/script.js"></script>
-</body>
+    <!-- Link JavaScript -->
+    <script src="src/js/script.js"></script>
+  </body>
 </html>
