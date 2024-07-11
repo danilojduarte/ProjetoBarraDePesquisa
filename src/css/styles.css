@@ -58,12 +58,19 @@ section {
   border-radius: 24px;
   padding: 14px;
   width: 650px;
-  height: auto;
+  /* Para add scroll, basta substituir a altura do item, neste caso, add auto no lugar de max-height */
+  max-height: 420px;
   overflow-y: auto;
 }
 .item {
   display: flex;
   gap: 12px;
+  align-items: center;
+}
+.item-img {
+  width: 180px;
+  /* Para add scroll, basta substituir a altura do item */
+  height: auto;
 }
 
 .item-img img {
@@ -78,5 +85,10 @@ section {
 }
 .item-subtitle {
   font-size: 12px;
+  color: #666;
+}
+.item-description {
+  font-size: 14px;
+  text-align: justify;
   color: #666;
 }
