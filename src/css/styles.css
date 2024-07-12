@@ -59,7 +59,7 @@ section {
   padding: 14px;
   width: 650px;
   /* Para add scroll, basta substituir a altura do item, neste caso, add auto no lugar de max-height */
-  max-height: 420px;
+  max-height: auto;
   overflow-y: auto;
 }
 .item {
@@ -91,4 +91,8 @@ section {
   font-size: 14px;
   text-align: justify;
   color: #666;
+}
+#no_results {
+  display: none;
+  text-align: center;
 }
