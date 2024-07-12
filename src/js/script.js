@@ -10,8 +10,11 @@ searchIpunt.addEventListener('input', (event) => {
   let hasResults = false;
 
 
+  if (value != '') {
   items.forEach(item => {
-    if(formatString(item.textContent).indexOf(value) !== -1) {
+    const itemTitle = item.querySelector('.item-title').textContent;
+    const itemDescription = item.querySelector('.item-description').textContent;
+    if(formatString(itemTitle).indexOf(value) !== -1 || formatString(itemDescription).indexOf(value) !== -1){
       item.style.display = 'flex';
 
       hasResults = true;
@@ -25,11 +28,18 @@ searchIpunt.addEventListener('input', (event) => {
   } else {
     noResults.style.display = 'block';
   }
+} else {
+  itens.forEach(item => item.style.display = 'flex');
+
+  noResults.style.display = 'none'
+}
 });
 
 
 function formatString(value) {
   return value
   .toLowerCase()
-  .trim();
+  .trim()
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g, '');
 }
